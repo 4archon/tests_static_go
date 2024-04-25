@@ -4,16 +4,19 @@ import (
 	"fmt"
 )
 
-func ret_nil(num *int) *int {
-	if *num > 10 {
+const nnum = 10
+
+func retNil(num *int) *int {
+	if *num > nnum {
 		return nil
 	}
+
 	return num
 }
 
 func main() {
-	var num int = 2
-	var v *int
-	v = ret_nil(&num)
+	num := 2
+	v := retNil(&num)
+
 	fmt.Println(*v)
 }
