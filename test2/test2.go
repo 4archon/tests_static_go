@@ -6,6 +6,6 @@ import (
 
 func main() {
 	var p *int
-	var num int = *p
+	num := *p
 	fmt.Println(num)
 }
