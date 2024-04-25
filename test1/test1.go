@@ -15,7 +15,7 @@ func retNil(num *int) *int {
 }
 
 func main() {
-	num := 2
+	num := 11
 	v := retNil(&num)
 
 	fmt.Println(*v)
